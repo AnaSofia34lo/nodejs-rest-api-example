@@ -29,6 +29,21 @@ app.post('/', function (req, res) {
   res.end(JSON.stringify(response))
 })
 
+<<<<<<< HEAD
+=======
+//Método POST
+app.post('/hola', function (req, res) {
+  res.json({ message: "Hola mundo desde POST!" })
+})
+
+// Método GET
+app.get('/fecha', function (req, res) {
+  const ahora = new Date()
+  res.json({ message: "Fecha y hora actual", datetime: ahora })
+})
+
+
+>>>>>>> 788312c (Nuevo get fecha)
 app.put('/', function (req, res) {
   console.log('PUT request received')
   res.writeHead(200, {'Content-Type': 'application/json'})
