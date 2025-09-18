@@ -30,13 +30,17 @@ app.post('/', function (req, res) {
 })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //Método POST
+=======
+//Método nuevo POST
+>>>>>>> f31b404 (Nuevo post hola)
 app.post('/hola', function (req, res) {
   res.json({ message: "Hola mundo desde POST!" })
 })
 
-// Método GET
+// Método nuevo GET
 app.get('/fecha', function (req, res) {
   const ahora = new Date()
   res.json({ message: "Fecha y hora actual", datetime: ahora })
